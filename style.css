@@ -1,0 +1,215 @@
+  *{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1, h3, h4, h5, h6{
+    font-weight: 600;
+    color: white;
+
+  }
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+}
+p{
+    color: rgb(128, 128, 128);
+}
+  body{
+    background-color: black;
+    height: 100vh;
+  }
+  
+  .flex{
+    display: flex;
+  }
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 122px;
+}
+
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+header a{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    transition: 0.5s;
+    display: inline-block;
+   
+}
+header a:hover{
+    color: white;
+    transform: scale(1.25);
+}
+
+header nav ul{
+    list-style-type: none;
+
+} 
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+
+}
+
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+header .btn-contato button:hover{
+    background-color: rgb(128, 128, 128);
+    color: white;
+}
+
+/*main*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25%;
+    
+    gap: 20px;
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+    justify-content: center;
+    align-items: center;
+   
+   
+   
+}
+
+section.topo-do-site.flex{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.topo-do-site .topo-texto h1{
+    color: aliceblue;
+    font-size: 28px;
+    line-height: 28px;
+
+
+}
+
+.topo-do-site .topo-texto p{	
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px 0;
+}
+span{
+    color: rgb(148, 0, 211);
+}
+
+section .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+   
+section .btn-contato button:hover{
+    background-color: rgb(128, 128, 128);
+    color: white;
+}
+
+section.especialidades{
+    padding: 80px 4%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+section.especialidades .especialidades-box{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    width: 450px;
+    padding: 50px;
+    color: #ffffff;
+    border: 1px solid rgba(128, 128, 128, 0.122);
+    border-radius: 10px;
+}
+section.especialidades .especialidades-box:hover{
+    border: 1px solid rgb(148, 0, 211);
+    color: rgb(148, 0, 211);
+    transition: 0.5s;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+ 
+
+
+section.especialidades .especialidades-box i{
+    font-size: 40px;
+    color: rgb(148, 0, 211);
+
+}
+
+section.sobre{
+    padding: 80px 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
