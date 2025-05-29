@@ -1,100 +1,153 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Nascimento - Dev</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
     <header>
+      <nav class="navbar">
         <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/transparentLogo.png" alt="Logo Lucas">
-                </a>
-
-            </div> <!--logo-->
-            <nav class="meu-desktop">
-                <ul>
-                    
-                        <li></li><a href="#">Inicio</a></li>
-                        <li></li><a href="#">Especialidades</a></li>
-                        <li></li><a href="#">Sobre</a></li>
-                        <li></li><a href="#">Projetos</a></li>
-    
-                    
-                </ul>
-            </nav>
-
-            <div class="btn-contato">
-                 <a href="#">
-                    <button>Contato</button>
-                 </a>
-            </div> <!--btn contato-->
-
-        </div> <!--interface-->
+          <div class="logo">
+            <a href="#topo-do-site"
+              ><img
+                src="images/transparentLogo.png"
+                alt="Logo Lucas Nascimento"
+            /></a>
+          </div>
+          <ul class="menu">
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <div class="topo-do-site">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="topo-texto">
-
-                            <h1>Transformando ideias em código: <span>desenvolvimento web</span> com precisão e criatividade.</h1>
-                            <p>Desenvolvo soluções digitais inovadoras para transformar suas ideias em realidade com eficiência e criatividade.</p>
-
-                            <div class="btn-contato">
-                                <a href="#">
-                                    <button>Entre em contato</button>
-                                </a>
-                            </div>
-
-                        </div>
-                     
-                    </div>
-                </div>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="topo-texto">
+              <h1>
+                Transformando ideias em código:
+                <span>desenvolvimento web</span> com precisão e criatividade.
+              </h1>
+              <p>
+                Desenvolvo soluções digitais inovadoras para transformar suas
+                ideias em realidade com eficiência e criatividade.
+              </p>
+              <div class="btn-contato">
+                <a href="#contato"><button>Entre em contato</button></a>
+              </div>
             </div>
-        </section>
-        <section class="especialidades">
-          <div class="interface">
-            <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
-            <div class="flex">
-                <div class="especialidades-box">
-                    <i class="bi bi-code-slash"></i>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Desenvolvimento de sites e aplicativos web responsivos, com foco na usabilidade e otimização de performance.</p>
-                </div>
-                <div class="especialidades-box">
-                    <i class="bi bi-phone"></i>       
-                    <h3>Desenvolvimento Mobile</h3>
-                    <p>Desenvolvimento de aplicativos mobile nativos para Android e iOS.</p>
-                </div>
-    
+          </div>
+        </div>
+      </section>
 
-            </div> <!--flex-->
+      <section class="redes-sociais fade-in">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>REDES</span></h2>
+          <div class="icones-redes">
+            <a href="https://wa.me/SEUNUMERO" target="_blank"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a href="https://www.instagram.com/SEUUSUARIO" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://github.com/SEUUSUARIO" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/SEUUSUARIO" target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
 
-          </div> <!--interface-->
-            
-        </section> <!--especialidades-->
+      <section id="especialidades" class="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-code-slash"></i>
+              <h3>Desenvolvimento Web</h3>
+              <p>
+                Criação de sites e aplicativos com foco em usabilidade,
+                responsividade e performance.
+              </p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-phone"></i>
+              <h3>Desenvolvimento Mobile</h3>
+              <p>
+                Aplicativos nativos e híbridos para Android e iOS, com
+                performance e estética.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="sobre">
+      <section id="sobre" class="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="sobre-texto">
+              <h2 class="titulo">SOBRE <span>MIM</span></h2>
+              <p>
+                Oi, eu sou <span>Lucas Nascimento</span>, desenvolvedor web e
+                mobile. Estudante de <span>Tecnologia da Informação</span> na
+                UFERSA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="interface">
-                <div class="flex">
-                    <div class="sobre-texto">
-                        <h2 class="titulo">SOBRE <span>MIM</span></h2>
-                        <p>Oi, eu sou <span>Lucas Nascimento</span> desenvolvedor web e mobile. Estudante de <span>tecnologia da informação</span>, na univerisdade federal rural do semi-arido (UFERSA).</p>
-                        
-
-        </section>
+      <section id="contato" class="contato">
+        <div class="interface">
+          <h2 class="titulo">ENTRE EM <span>CONTATO</span></h2>
+          <form action="https://formspree.io/f/mgvkgpdp" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu e-mail"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+    <a
+      href="https://wa.me/5588992018706?text=Olá%2C%20quero%20saber%20mais!"
+      class="whatsapp-button"
+      target="_blank"
+      aria-label="Converse pelo WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
 </html>
